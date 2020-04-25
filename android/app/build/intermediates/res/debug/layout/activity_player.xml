@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <org.freedesktop.gstreamer.play.GStreamerSurfaceView
+        android:id="@+id/surface_video"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/order_status_view"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/order_status_view"
+                android:textAppearance="?android:attr/textAppearance" />
+
+            <TextView
+                android:id="@+id/order_status_value"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/order_status_value"
+                android:textSize="@dimen/menu_info_text_size" />
+
+            <TextView
+                android:id="@+id/connect_status_view"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/connect_status_view"
+                android:textAppearance="?android:attr/textAppearance" />
+
+            <TextView
+                android:id="@+id/connect_status_value"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/connect_status_value"
+                android:textSize="@dimen/menu_info_text_size" />
+
+
+            <Button
+                android:id="@+id/connect_btn"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="@string/connect" />
+
+            <Button
+                android:id="@+id/quit_btn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="@string/quit" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/controler_padding">
+
+        <TextView
+            android:id="@+id/servo_x_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/info_text_padding"
+            android:text="@string/stanby_x_input"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:id="@+id/servo_y_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/info_text_padding"
+            android:text="@string/stanby_y_input"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:id="@+id/servo_angle_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/info_text_padding"
+            android:text="@string/stanby_angle_input"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:id="@+id/servo_distance_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/info_text_padding"
+            android:text="@string/stanby_distance_input"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:id="@+id/servo_direction_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/info_text_padding"
+            android:text="@string/stanby_direction_input"
+            android:textSize="@dimen/info_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/servo_joystick_layout"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/image_button_bg"
+            android:gravity="center"></RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/controler_padding">
+
+        <TextView
+            android:id="@+id/frame_x_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/info_text_padding"
+            android:text="@string/stanby_x_input"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:id="@+id/frame_y_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/info_text_padding"
+            android:text="@string/stanby_y_input"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:id="@+id/frame_angle_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/info_text_padding"
+            android:text="@string/stanby_angle_input"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:id="@+id/frame_distance_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/info_text_padding"
+            android:text="@string/stanby_distance_input"
+            android:textSize="@dimen/info_text_size" />
+
+        <TextView
+            android:id="@+id/frame_direction_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/info_text_padding"
+            android:text="@string/stanby_direction_input"
+            android:textSize="@dimen/info_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/frame_joystick_layout"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/image_button_bg"></RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>
+<!-- From: file:/C:/Users/admin/Downloads/pitank/android/app/src/main/res/layout/activity_player.xml -->

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\admin\Downloads\gstplayer\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="C:\Users\admin\Downloads\gstplayer\android\app\build\intermediates\pre-dexed\debug\classes-fce824c12b18f87ed2095bcdb19ae55a0b594463.jar" />
+    </item>
+    <item
+        jar="D:\android\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="C:\Users\admin\Downloads\gstplayer\android\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-8645e35b59728b6786c66cfa73bfcd5fe29e4808.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\Downloads\pitank\android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="C:\Users\admin\Downloads\pitank\android\app\build\intermediates\pre-dexed\debug\classes-48a1fcabc60bcf2dd31e330f0f66c28553d9b502.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\Downloads\gstplayer\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="C:\Users\admin\Downloads\gstplayer\android\app\build\intermediates\pre-dexed\debug\classes-79cef48a37d3b5dfa525a8ad9af3bec1cfb5a670.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\Downloads\pitank\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="C:\Users\admin\Downloads\pitank\android\app\build\intermediates\pre-dexed\debug\classes-946d35059e1fdb50c94cfa219de75a20ddcd516d.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\Downloads\pitank\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="C:\Users\admin\Downloads\pitank\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-a426c97a2b57e82d33dc5f5d8ac97094b68d1a35.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\Downloads\gstplayer\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="C:\Users\admin\Downloads\gstplayer\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-bac4a0ba123d2dd44f1b8c27ed2eefa67d3a0ac0.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\Downloads\gstplayer\android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="C:\Users\admin\Downloads\gstplayer\android\app\build\intermediates\pre-dexed\debug\classes-af656249867c1e6564790317d10ffe10355b02cc.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\Downloads\pitank\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="C:\Users\admin\Downloads\pitank\android\app\build\intermediates\pre-dexed\debug\classes-c440c4620b105e2d1e7f9552c7e2fb74831f7159.jar" />
+    </item>
+
+</items>

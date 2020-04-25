@@ -1,0 +1,32 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+GST_PATH := $(LOCAL_PATH)/../../../../../
+
+LOCAL_MODULE    := gstplayer
+LOCAL_SRC_FILES := player.c  \
+    $(GST_PATH)/lib/gst/player/gstplayer.c \
+    $(GST_PATH)/lib/gst/player/gstplayer-media-info.c
+LOCAL_C_INCLUDES := $(GST_PATH)/lib
+LOCAL_SHARED_LIBRARIES := gstreamer_android
+LOCAL_LDLIBS := -llog -landroid
+include $(BUILD_SHARED_LIBRARY)
+
+ifeq ($(TARGET_ARCH_ABI),armeabi)
+  GSTREAMER_ROOT := $(GSTREAMER_ROOT_ARM)
+else ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
+  GSTREAMER_ROOT := $(GSTREAMER_ROOT_ARMV7)
+else ifeq ($(TARGET_ARCH_ABI),x86)
+  GSTREAMER_ROOT := $(GSTREAMER_ROOT_X86)
+else
+  $(error Target arch ABI $(TARGET_ARCH_ABI) not supported)
+endif
+
+GSTREAMER_NDK_BUILD_PATH  := $(GSTREAMER_ROOT)/share/gst-android/ndk-build/
+
+include $(GSTREAMER_NDK_BUILD_PATH)/plugins.mk
+GSTREAMER_PLUGINS         := $(GSTREAMER_PLUGINS_CORE) $(GSTREAMER_PLUGINS_PLAYBACK) $(GSTREAMER_PLUGINS_CODECS) $(GSTREAMER_PLUGINS_NET) $(GSTREAMER_PLUGINS_SYS) $(GSTREAMER_CODECS_RESTRICTED) $(GSTREAMER_CODECS_GPL) $(GSTREAMER_PLUGINS_ENCODING) $(GSTREAMER_PLUGINS_VIS) $(GSTREAMER_PLUGINS_EFFECTS) $(GSTREAMER_PLUGINS_NET_RESTRICTED)
+GSTREAMER_EXTRA_DEPS      := gstreamer-video-1.0 glib-2.0
+
+include $(GSTREAMER_NDK_BUILD_PATH)/gstreamer-1.0.mk
